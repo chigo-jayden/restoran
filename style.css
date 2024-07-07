@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+header {
+    background: linear-gradient(rgba(15, 23, 43, .9)100%, rgba(15, 23, 43, .9)100%), url(Restoran/images/bg-hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+
+nav h1 {
+    color: orange;
+    font-family: sans-serif;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    list-style: none;
+    transition: ease-in-out 0.7s;
+}
+
+nav ul li {
+    cursor: pointer;
+    transition: ease-in-out 0.7s;
+}
+
+nav ul li,
+nav ul li a {
+    color: white;
+}
+
+nav ul :hover {
+    color: rgb(235, 211, 168)
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 7rem;
+}
+
+.yellow {
+    color: orange;
+}
+
+nav button {
+    width: 140px;
+    height: 2.8rem;
+    background-color: orange;
+    color: white;
+    border-radius: 3px;
+    border-style: none;
+}
+
+header .hero_header p {
+    font-size: 20px;
+    color: white;
+}
+
+header .hero_header {
+    display: flex;
+    padding: 1rem 7rem;
+    gap: 5rem;
+}
+
+header .hero_header div {
+    width: 500px;
+    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.hero_header div button {
+    width: 200px;
+    padding: 1rem 2rem;
+    background-color: orange;
+    color: #fff;
+    border: none;
+}
+
+.hero_header div h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+
+header .hero_header img {
+    width: 50%;
+    height: 50%;
+    animation: imgRotate 50s linear infinite;
+}
+
+@keyframes imgRotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.card-container {
+    margin-top: 90px;
+
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.card {
+    width: 280px;
+    transition: ease-in-out .5s;
+    height: 250px;
+    padding: 1rem;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+
+}
+
+.card:hover{
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+
+}
+.fa-solid{
+    transition: ease-in-out .5s;
+}
+.card:hover i{
+    color: white;
+}
+.btn {
+    background-color: white;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    background-color: orange;
+    transition: ease-in-out 0.7s;
+
+}
+
+.btn:hover {
+    background-color: rgba(241, 191, 97, 0.644);
+}
+
+.about-us-container {
+    width: 100%;
+    height: 700px;
+
+    display: flex;
+}
+
+.grid-container {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 1.5em;
+}
+
+.grid-item4 {
+    width: 300px;
+    height: 300px;
+    border-radius: 2px;
+    background-image: url(Restoran/images/about-4.jpg);
+    background-size: cover;
+}
+
+.grid-item2 {
+    width: 200px;
+    height: 200px;
+    border-radius: 2px;
+    margin-top: 6.4em;
+    background-image: url(Restoran/images/about-2.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.grid-item3 {
+    width: 200px;
+    height: 200px;
+    border-radius: 2px;
+    margin-left: 6.3em;
+    background-image: url(Restoran/images/about-3.jpg);
+    background-size: cover;
+}
+
+.grid-item1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 2px;
+    background-image: url(Restoran/images/about-1.jpg);
+    background-size: cover;
+}
+
+.about-content-header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-content-header span {
+    width: 40px;
+    height: 2px;
+    background-color: orange;
+}
+
+.about-us p {
+    margin: 20px 0;
+}
+
+.about-content-header h3 {
+    color: orange;
+
+}
+
+.about-us {
+    padding: 3em;
+}
+
+.about-us h1 {
+    font-size: 40px;
+}
+
+.history {
+    width: 500px;
+    padding: 2em;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.experience {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* border: 1px solid red; */
+}
+
+.experience span {
+    background-color: orange;
+    width: 40px;
+    height: 30px;
+    /* border: 1px solid red; */
+}
+
+.experience h2 {
+    color: orange;
+    font-size: 50px;
+    align-items: center;
+
+}
+
+.about-us button {
+    background-color: orange;
+    color: white;
+    width: 180px;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    transition: ease-in-out 0.7s;
+
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+
+.food-menu-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.food-menu-header span {
+    width: 40px;
+    height: 2px;
+    background-color: orange;
+}
+
+.about-us p {
+    margin: 20px 0;
+}
+
+.food-menu-header h3 {
+    color: orange;
+}
+
+.food-menu-header-text {
+    text-align: center;
+}
+
+.menu-item-header {
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+
+
+}
+
+.menu-item {
+    width: 200px;
+    height: 50px;
+
+}
+
+.menu-item p {
+    text-align: left;
+}
+
+.menu-container {
+    width: 1250px;
+    height: 480px;
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+}
+
+.menu-1 {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.content-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+
+.price {
+    color: orange;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    justify-content: space-between;
+}
+
+.menu-image1 {
+    height: 90px;
+    width: 90px;
+    border-radius: 3px;
+}
+
+.reservation-container {
+    width: 100%;
+    height: 500px;
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.book-reservation {
+    width: 50%;
+    height: 500px;
+
+    background-color: rgb(15, 23, 43, .9);
+}
+
+.team-members-header {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+
+}
+
+.team-members-header h3 {
+    color: orange;
+}
+
+.team-members-header span {
+    width: 40px;
+    height: 2px;
+    background-color: orange;
+}
+
+.team-members {
+    width: 100%;
+    height: 400px;
+    display: flex;
+
+}
+
+.members {
+    width: 25%;
+    height: 350px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+
+
+}
+
+#team-1 {
+    width: 250px;
+    height: 250px;
+    border-radius: 200px;
+    margin-left: 2.3em;
+}
+
+.members p {
+    font-weight: lighter;
+    text-align: center;
+}
+
+.members h2 {
+    text-align: center;
+}
+
+#chefs-heading {
+    text-align: center;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(15, 23, 43, .9);
+}
+
+.company-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.company {
+    /* width: 25%; */
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.company h3 {
+    color: orange;
+}
+
+.company-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.company span {
+    width: 50px;
+    height: 2px;
+    background-color: orange;
+    display: flex;
+}
+
+.company li {
+    color: white;
+    transition: ease-in-out 0.7s;
+    font-weight: 400;
+}
+
+.company-info li:hover {
+    font-size: 1.1rem;
+}
+
+.lorem {
+    color: white;
+    font-size: 18px;
+}
+
+input {
+    width: 200px;
+    height: 50px;
+    padding-left: 1rem;
+}
+
+.company button {
+    width: 100px;
+    height: 50px;
+    color: wheat;
+    background-color: orange;
+    font-weight: bold;
+    border: none;
+
+}
+
+@media screen and (max-width: 70em){
+    header, div, h1, footer, h3, span, img, h2, ul, li, p {
+        display: none
+    }
+    body::before{
+        content: "View on a Laptop :)";
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        width: 100vw;
+        height: 100vh;
+    }
+}
